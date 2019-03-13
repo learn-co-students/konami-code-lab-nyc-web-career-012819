@@ -20,6 +20,8 @@ let counter = 0;
 document.addEventListener('keydown', onKeyDownHandler);
 
   function onKeyDownHandler(e) {
+    console.log('hi');
+    window.alert("I am an alert box!");
     if (e.key == codes[counter]){
       counter++;
     }
@@ -28,7 +30,7 @@ document.addEventListener('keydown', onKeyDownHandler);
     }
 
     if( counter === 10){
-      alert ("Hurray!");
+      window.alert("Hurray!");
       console.log("HEY!");
     }
   }
